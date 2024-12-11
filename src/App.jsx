@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import AppLayout from "./layouts/AppLayout"
 import MoviesPage from "./pages/MoviesPage"
 import SingleMovie from "./pages/SingleMovie"
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
             <Route index element={<MoviesPage />} />
             <Route path="movies/1" element={<SingleMovie />} />
+            <Route path="*" element={<NotFound />} />
 
           </Route>
         </Routes>
