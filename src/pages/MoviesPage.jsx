@@ -1,9 +1,9 @@
+import Banner from "../components/Banner";
+
 export default function MoviesPage() {
     return (
         <>
-            <div className="container mt-5">
-                <h2>Tutti i Films</h2>
-            </div>
+            <Banner title="Film per Tutti" subtitle="Dicci che ne pensi!" description="Una community per condividere pareri su tanti films..." />
 
         </>
     )
