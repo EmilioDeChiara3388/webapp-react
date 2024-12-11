@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import AppLayout from "./layouts/AppLayout"
-import MoviesPage from "./components/MoviesPage"
-import SingleMovie from "./components/SingleMovie"
+import MoviesPage from "./pages/MoviesPage"
+import SingleMovie from "./pages/SingleMovie"
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
           <Route element={<AppLayout />}>
 
             <Route index element={<MoviesPage />} />
-            <Route path="movies/:id" element={<SingleMovie />} />
+            <Route path="movies/1" element={<SingleMovie />} />
 
           </Route>
         </Routes>
