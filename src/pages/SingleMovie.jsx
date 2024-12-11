@@ -1,7 +1,10 @@
+import Banner from "../components/Banner";
+
 export default function SingleMovie() {
     return (
         <>
-            <h2>Film Selezionato</h2>
+            <Banner title="Film Selezionato" subtitle="La community si è espressa!" description="Le recensioni dei nostri utenti." />
+
         </>
     )
 }
