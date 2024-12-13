@@ -29,6 +29,10 @@ export default function ReviewForm({ movie_id }) {
                     setOkMessage('Grazie per la tua recensione!')
                 }
             }).catch(err => console.log(err))
+
+        setUserName('')
+        setReview('')
+        setVote(0)
     }
 
     return (
