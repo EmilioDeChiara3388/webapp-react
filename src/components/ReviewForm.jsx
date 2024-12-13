@@ -14,8 +14,12 @@ export default function ReviewForm() {
                     </div>
                     <div>
                         <label htmlFor="vote">Il tuo voto</label>
-                        <input type="text" className="form-control mt-2 w-25" name="vote" id="vote" placeholder="Il tuo voto" />
+                        <input type="text" className="form-control mb-3 mt-2 w-25" name="vote" id="vote" placeholder="Il tuo voto" />
                     </div>
+                    <div>
+                        <button className="btn btn-dark btn-sm">Invia!</button>
+                    </div>
+
                 </form>
             </div>
 
