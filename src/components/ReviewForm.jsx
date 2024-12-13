@@ -11,7 +11,7 @@ export default function ReviewForm({ movie_id }) {
     function HandleForm(e) {
         e.preventDefault()
 
-        if (userName.length < 3 || review.length < 10 || rating == 0) {
+        if (userName.length < 3 || review.length < 10 || vote == 0) {
             setErrorMessage('Compila tutti i campi!')
 
         } else {
