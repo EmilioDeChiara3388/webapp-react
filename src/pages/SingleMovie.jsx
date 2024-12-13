@@ -21,7 +21,7 @@ export default function SingleMovie() {
     return (
         <>
             <Banner title={movie.title} subtitle="La community si è espressa!" description="Le recensioni dei nostri utenti." />
-            <ReviewForm />
+            <ReviewForm movie_id={id} />
             <section className="py-5">
                 <div className="container min-vh-100">
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
