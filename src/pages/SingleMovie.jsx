@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Banner from "../components/Banner";
 import ReviewCard from "../components/ReviewCard";
+import ReviewForm from "../components/ReviewForm";
 
 export default function SingleMovie() {
 
@@ -20,6 +21,7 @@ export default function SingleMovie() {
     return (
         <>
             <Banner title={movie.title} subtitle="La community si è espressa!" description="Le recensioni dei nostri utenti." />
+            <ReviewForm />
             <section className="py-5">
                 <div className="container min-vh-100">
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
