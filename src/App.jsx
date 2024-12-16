@@ -8,10 +8,16 @@ import NotFound from "./pages/NotFound"
 
 function App() {
 
+  const [loading, setLoading] = useState("")
+
+  const values = {
+    loading,
+    setLoading
+  }
 
   return (
     <>
-      <GlobalContext>
+      <GlobalContext.Provider value={values}>
         <BrowserRouter>
           <Routes>
             <Route element={<AppLayout />}>
@@ -24,7 +30,7 @@ function App() {
           </Routes>
 
         </BrowserRouter>
-      </GlobalContext>
+      </GlobalContext.Provider>
     </>
   )
 }
