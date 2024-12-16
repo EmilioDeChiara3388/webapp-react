@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { useState } from "react"
+import GlobalContext from "./contexts/GlobalContext"
 import AppLayout from "./layouts/AppLayout"
 import MoviesPage from "./pages/MoviesPage"
 import SingleMovie from "./pages/SingleMovie"
@@ -9,19 +11,20 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<AppLayout />}>
+      <GlobalContext>
+        <BrowserRouter>
+          <Routes>
+            <Route element={<AppLayout />}>
 
-            <Route index element={<MoviesPage />} />
-            <Route path="movies/:id" element={<SingleMovie />} />
-            <Route path="*" element={<NotFound />} />
+              <Route index element={<MoviesPage />} />
+              <Route path="movies/:id" element={<SingleMovie />} />
+              <Route path="*" element={<NotFound />} />
 
-          </Route>
-        </Routes>
+            </Route>
+          </Routes>
 
-      </BrowserRouter>
-
+        </BrowserRouter>
+      </GlobalContext>
     </>
   )
 }
